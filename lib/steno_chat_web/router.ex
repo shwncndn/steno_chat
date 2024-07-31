@@ -18,7 +18,7 @@ defmodule StenoChatWeb.Router do
     pipe_through(:browser)
 
     get("/", PageController, :home)
-    live("/main", MainLive, :index)
+    live("/main", MainLive.Index, :index) # Main caption and chat user interface
   end
 
   # Other scopes may use custom stacks.
